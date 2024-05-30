@@ -1,0 +1,12 @@
+1. Run `python mkm_setup.py`
+    This creates mkm.py, which contains most parameters for the genetic algorithm and microkinetic model
+    (The mkm.py can then be manipulated directly; the reason that it is not written out is that the absolute
+    paths to `dft_and_exp_data`, i.e., in the values for the keywords 'dft_energy_file' and 'spectra_dir',
+    will not be correct otherwise. They have to be absolute.)
+    
+2. Run the genetic algorithm, `python ga.py`
+    The population size is 20 and maximum number of iterations/generations 3 to make sure that the model works. The population size
+    in the paper is 200 and number of iterations 2000. This can be changed in mkm.py, 'algorithm_parameters'
+    
+3. To read the variables of the genetic algorithm and replot and reprint, go to 'single' and run ga.py (run_type='single' in this script)
+
